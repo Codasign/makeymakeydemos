@@ -19,3 +19,6 @@ Demos for MaKey MaKeys by Codasign
 
 ==raspmakey==
 RaspberryPi demo
+
+==wordyRappingHood==
+Processing demo with two MaKey MaKeys, one reprogrammed to add more keys
