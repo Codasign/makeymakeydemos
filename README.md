@@ -17,8 +17,10 @@ Demos for MaKey MaKeys by Codasign
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-==raspmakey==
+raspmakey
+---------
 RaspberryPi demo
 
-==wordyRappingHood==
+wordyRappingHood
+----------------
 Processing demo with two MaKey MaKeys, one reprogrammed to add more keys
