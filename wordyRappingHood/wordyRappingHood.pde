@@ -3,6 +3,8 @@
  written by Becky Stewart for Codasign
  September 2013
  
+ see http://www.youtube.com/watch?v=g_1kziD6Lec
+ 
  These programs are free software: you can 
  redistribute them and/or modify them under 
  the terms of the GNU General Public License 
