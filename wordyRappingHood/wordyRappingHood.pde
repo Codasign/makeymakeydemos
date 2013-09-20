@@ -22,10 +22,19 @@
  see <http://www.gnu.org/licenses/>.
  */
 
+import ddf.minim.*;
+
+Minim minim;
+AudioPlayer player;
+
 PFont myFont;
 
 void setup() {
   size( 1280, 740 );
+
+  // set audio player
+  minim = new Minim(this);
+
   myFont = loadFont("TamilMN-60.vlw");
   textFont( myFont, 60 );
   noStroke();
@@ -43,6 +52,8 @@ void keyPressed() {
     switch( keyCode ) {
     case UP:
       text( "Peter", random(0, width-20), random(0, height) );
+      player = minim.loadFile("test-Chords1b.wav");
+      player.play();
       break;
     case DOWN:
       text( "Piper", random(0, width-20), random(0, height) );
@@ -62,6 +73,8 @@ void keyPressed() {
       break;
     case 'a':
       text( "of", random(0, width-20), random(0, height) );
+      player = minim.loadFile("test-sample.wav");
+      player.play();
       break;
     case 'd':
       text( "peppers", random(0, width-20), random(0, height) );
