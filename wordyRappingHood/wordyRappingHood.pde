@@ -27,7 +27,9 @@
 import ddf.minim.*;
 
 Minim minim;
-AudioPlayer player;
+AudioPlayer peter, piper, picked, a, of, peck, peppers, ifwav;
+AudioPlayer wheres, the, she, sells, seashells, by, seashore, shells;
+AudioPlayer are, surely, how, much, wood, would, woodchuck, chuck, could;
 
 PFont myFont;
 
@@ -37,13 +39,41 @@ void setup() {
   // set audio player
   minim = new Minim(this);
 
+  peter = minim.loadFile("Peter.wav");
+  piper = minim.loadFile("Piper.wav");
+  picked = minim.loadFile("Picked-1.wav");
+  a = minim.loadFile("A.wav");
+  peck = minim.loadFile("A Peck.wav");
+  of = minim.loadFile("Of_long.wav");
+  peppers = minim.loadFile("Peppers.wav");
+  ifwav = minim.loadFile("If.wav");
+  wheres = minim.loadFile("Wheres.wav");
+  the = minim.loadFile("The.wav");
+  she = minim.loadFile("She.wav");
+  sells = minim.loadFile("Sells.wav");
+  seashells = minim.loadFile("Seashells.wav");
+  by = minim.loadFile("By.wav");
+  seashore = minim.loadFile("Seashore.wav");
+  shells = minim.loadFile("Shells.wav");
+  are = minim.loadFile("Are.wav");
+  surely = minim.loadFile("Surely.wav");
+  how = minim.loadFile("How.wav");
+  much = minim.loadFile("Much.wav");
+  wood = minim.loadFile("Wood.wav");
+  would = minim.loadFile("Would.wav");
+  woodchuck = minim.loadFile("Woodchuck.wav");
+  chuck = minim.loadFile("Chuck.wav");
+
+
+
+
   myFont = loadFont("TamilMN-60.vlw");
   textFont( myFont, 60 );
   noStroke();
 }
 
 void draw() {
-  fill( 25, 58, 129, 5 );
+  fill(162, 20, 30, 5 );
   rect( 0, 0, width, height );
 }
 
@@ -54,88 +84,135 @@ void keyPressed() {
     switch( keyCode ) {
     case UP:
       text( "Peter", random(0, width-20), random(0, height) );
-      player = minim.loadFile("test-Chords1b.wav");
-      player.play();
+      peter.play();
+      peter.rewind();
       break;
     case DOWN:
       text( "Piper", random(0, width-20), random(0, height) );
+      piper.play();
+      piper.rewind();
       break;
     case RIGHT:
       text( "picked", random(0, width-20), random(0, height) );
+      picked.play();
+      picked.rewind();
       break;
     case LEFT:
       text( "a", random(0, width-20), random(0, height) );
+      a.play();
+      a.rewind();
       break;
     }
   } 
   else { // letters
     switch( key ) {
     case 'w':
-      text( "peck", random(0, width-20), random(0, height) );
+      text( "a peck", random(0, width-20), random(0, height) );
+      peck.play();
+      peck.rewind();
       break;
     case 'a':
       text( "of", random(0, width-20), random(0, height) );
-      player = minim.loadFile("test-sample.wav");
-      player.play();
+      of.play();
+      of.rewind();
       break;
     case 'd':
       text( "peppers", random(0, width-20), random(0, height) );
+      peppers.play();
+      peppers.rewind();
       break;
     case 's':
       text( "if", random(0, width-20), random(0, height) );
+      ifwav.play();
+      ifwav.rewind();
       break;
     case 'f':
       text( "where's", random(0, width-20), random(0, height) );
+      wheres.play();
+      wheres.rewind();
       break;
     case 'g':
       text( "the", random(0, width-20), random(0, height) );
+      the.play();
+      the.rewind();
       break;
 
       // re-programmed second MaKey MaKey
     case 'q':
       text( "she", random(0, width-20), random(0, height) );
+      she.play();
+      she.rewind();
       break;
     case 'e':
       text( "sells", random(0, width-20), random(0, height) );
+      sells.play();
+      sells.rewind();
       break;
     case 'r':
       text( "seashells", random(0, width-20), random(0, height) );
+      seashells.play();
+      seashells.rewind();
       break;
     case 't':
       text( "by", random(0, width-20), random(0, height) );
+      by.play();
+      by.rewind();
       break;
     case 'y':
       text( "seashore", random(0, width-20), random(0, height) );
+      seashore.play();
+      seashore.rewind();
       break;
     case 'u':
       text( "shells", random(0, width-20), random(0, height) );
+      shells.play();
+      shells.rewind();
       break;
     case 'i':
       text( "are", random(0, width-20), random(0, height) );
+      are.play();
+      are.rewind();
       break;
     case 'o':
       text( "surely", random(0, width-20), random(0, height) );
+      surely.play();
+      surely.rewind();
       break;
     case 'h':
       text( "how", random(0, width-20), random(0, height) );
+      how.play();
+      how.rewind();
       break;
     case 'j':
       text( "much", random(0, width-20), random(0, height) );
+      much.play();
+      much.rewind();
       break;
     case 'k':
       text( "wood", random(0, width-20), random(0, height) );
+      wood.play();
+      wood.rewind();
       break;
     case 'l':
       text( "would", random(0, width-20), random(0, height) );
+      would.play();
+      would.rewind();
       break;
     case 'z':
       text( "woodchuck", random(0, width-20), random(0, height) );
+      woodchuck.play();
+      woodchuck.rewind();
       break;
     case 'x':
       text( "chuck", random(0, width-20), random(0, height) );
+      chuck.play();
+      chuck.rewind();
       break;
     case 'c':
       text( "could", random(0, width-20), random(0, height) );
+      could = minim.loadFile("Could.wav");
+      could.play();
+      could.rewind();
       break;
     }
   }
