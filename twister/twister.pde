@@ -156,6 +156,26 @@ void keyPressed() {
     case 'e':
       sensorArray[21] = true;
       break;
+      // 2nd MaKeyMaKey board
+    case 'w':
+      sensorArray[2] = true;
+      break;
+    case 'a':
+      sensorArray[6] = true;
+      break;
+    case 's':
+      sensorArray[10] = true;
+      break;
+    case 'd':
+      sensorArray[14] = true;
+      break;
+    case 'f':
+      sensorArray[18] = true;
+      break;
+    case 'g':
+      sensorArray[22] = true;
+      break;
+      
     }
   }
 }
@@ -202,6 +222,25 @@ void keyReleased() {
       break;
     case 'e':
       sensorArray[21] = false;
+      break;
+      // 2nd MaKeyMaKey board
+    case 'w':
+      sensorArray[2] = false;
+      break;
+    case 'a':
+      sensorArray[6] = false;
+      break;
+    case 's':
+      sensorArray[10] = false;
+      break;
+    case 'd':
+      sensorArray[14] = false;
+      break;
+    case 'f':
+      sensorArray[18] = false;
+      break;
+    case 'g':
+      sensorArray[22] = false;
       break;
     }
   }
