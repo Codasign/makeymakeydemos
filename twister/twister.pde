@@ -1,7 +1,7 @@
 int numCircles = 24;
 boolean sensorArray[];
 
-int circDiameter = 90;
+int circDiameter = 100;
 
 void setup() {
   size( 800, 600 );
