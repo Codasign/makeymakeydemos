@@ -10,7 +10,8 @@ void setup() {
   for ( int i=0; i<numCircles; i++ ) {
     sensorArray[i] = false;
   }
-  sensorArray[1] = true;
+  sensorArray[4]=true;
+  sensorArray[23] = true;
 }
 
 void draw() {
@@ -22,13 +23,17 @@ void drawBoard() {
   int numRows = 4;
   for (int cols=0; cols<6; cols++ ) {
     for (int rows=0; rows<4; rows++) {
-      println((numRows*cols)+rows);
-      if ( sensorArray[(numRows*cols)+rows] ) {
-        fill( 255, 0, 0 );
+      // top row
+      if ( sensorArray[(numRows*cols)+rows]) {
+        if (rows==0)
+          fill( 255, 0, 0 );
+        if ( rows==3)
+          fill( 0, 0, 255 );
       } 
       else {
-        fill( 0, 255, 0 );
+        fill( 255, 255, 255 );
       }
+
       ellipse( (cols*100)+50, (rows*100)+50, circDiameter, circDiameter);
     }
   }
