@@ -115,7 +115,22 @@ void drawBoard() {
 
 void keyPressed() {
   // check if coded
+  // arrow keys
   if ( key==CODED ) {
+    switch( keyCode ) {
+    case UP:
+      sensorArray[3] = true;
+      break;
+    case DOWN:
+      sensorArray[7] = true;
+      break;
+    case LEFT:
+      sensorArray[11] = true;
+      break;
+    case RIGHT:
+      sensorArray[15] = true;
+      break;
+    }
   }
   // not coded, so regular letter
   else {
@@ -175,7 +190,10 @@ void keyPressed() {
     case 'g':
       sensorArray[22] = true;
       break;
-   
+      // SPACE key
+    case ' ':
+      sensorArray[19] = true;
+      break;
     }
   }
 }
@@ -184,6 +202,23 @@ void keyPressed() {
 void keyReleased() {
   // check if coded
   if ( key==CODED ) {
+    switch( keyCode ) {
+    case UP:
+      sensorArray[3] = false;
+      break;
+    case DOWN:
+      sensorArray[7] = false;
+      break;
+    case LEFT:
+      sensorArray[11] = false;
+      break;
+    case RIGHT:
+      sensorArray[15] = false;
+      break;
+    case ' ':
+      sensorArray[19] = false;
+      break;
+    }
   }
   // not coded, so regular letter
   else {
@@ -242,6 +277,9 @@ void keyReleased() {
       break;
     case 'g':
       sensorArray[22] = false;
+      break;
+    case ' ':
+      sensorArray[19] = false;
       break;
     }
   }
