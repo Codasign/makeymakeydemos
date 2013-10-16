@@ -171,6 +171,9 @@ void keyPressed() {
     case 'e':
       sensorArray[21] = true;
       break;
+    case 'r':
+      sensorArray[23] = true;
+      break;
       // 2nd MaKeyMaKey board
     case 'w':
       sensorArray[2] = true;
@@ -258,6 +261,9 @@ void keyReleased() {
       break;
     case 'e':
       sensorArray[21] = false;
+      break;
+    case 'r':
+      sensorArray[23] = false;
       break;
       // 2nd MaKeyMaKey board
     case 'w':
