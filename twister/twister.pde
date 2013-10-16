@@ -1,10 +1,10 @@
 int numCircles = 24;
 boolean sensorArray[];
 
-int circDiameter = 100;
+int circDiameter = 150;
 
 void setup() {
-  size( 800, 600 );
+  size( 1200, 800 );
 
   sensorArray = new boolean[24];
   resetBoard();
@@ -108,7 +108,7 @@ void drawBoard() {
       }
 
 
-      ellipse( (cols*100)+50, (rows*100)+50, circDiameter, circDiameter);
+      ellipse( (cols*190)+120, (rows*190)+120, circDiameter, circDiameter);
     }
   }
 }
@@ -175,10 +175,11 @@ void keyPressed() {
     case 'g':
       sensorArray[22] = true;
       break;
-      
+   
     }
   }
 }
+
 
 void keyReleased() {
   // check if coded
